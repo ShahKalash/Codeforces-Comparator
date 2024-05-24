@@ -43,10 +43,14 @@
         <tr>
             <th>Contest</th>
             <th>
-                <%=arr1[0][0].handle %>
+                <a href="https://codeforces.com/profile/<%=arr1[0][0].handle %>">
+                    <%=arr1[0][0].handle %>
+                </a>
             </th>
             <th>
-                <%=arr2[0][0].handle %>
+                <a href="https://codeforces.com/profile/<%=arr2[0][0].handle %>">
+                    <%=arr2[0][0].handle %>
+                </a>
             </th>
 
         </tr>
@@ -55,7 +59,9 @@
                 <%if (arr1[0][i].contestId===arr2[0][j].contestId){%>
                     <tr>
                         <td>
-                            <%=arr1[0][i].contestName%>
+                            <a href="https://codeforces.com/contest/<%=arr1[0][i].contestId %>">
+                                <%=arr1[0][i].contestName%>
+                            </a>
                         </td>
                         <td>
                             <%=arr1[0][i].rank%>

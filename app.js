@@ -59,6 +59,7 @@ app.get('/standing', (req, res) => {
                             const parsedData2 = JSON.parse(rawData);
                             // console.log(parsedData.result);
                             arr2.push(parsedData2.result);
+                            console.log(parsedData);
                             res.render('standing', { arr1: arr1, arr2: arr2 });
                         } catch (error) {
                             console.error('Error parsing JSON:', error);
